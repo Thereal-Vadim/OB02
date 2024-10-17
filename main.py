@@ -29,9 +29,9 @@ class Admin(User):
         for user in self.__users:
             print(user.get_name())
 
-admin = Admin(1, "Alice")
-user1 = User(2, "Bob")
-user2 = User(3, "Charlie")
+admin = Admin(1, "Admin")
+user1 = User(2, "User1")
+user2 = User(3, "User2")
 
 admin.add_user(user1)
 admin.add_user(user2)
