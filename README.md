@@ -35,19 +35,19 @@
 
 ```python
 # Создание администратора и пользователей
-admin = Admin(1, "Alice")
-user1 = User(2, "Bob")
-user2 = User(3, "Charlie")
+admin = Admin(1, "Admin")
+user1 = User(2, "User1")
+user2 = User(3, "User2")
 
 # Добавление пользователей в список администратора
 admin.add_user(user1)
 admin.add_user(user2)
 
 # Вывод всех пользователей
-admin.list_users()  # Выведет 'Bob' и 'Charlie'
+admin.list_users()  # Выведет 'User1' и 'User2'
 
 # Удаление пользователя из списка администратора
 admin.remove_user(user1)
 
 # Вывод оставшихся пользователей
-admin.list_users()  # Выведет 'Charlie'
+admin.list_users()  # Выведет 'User2'
